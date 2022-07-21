@@ -1,7 +1,3 @@
-import ntpath
-from turtle import pensize
-
-
 class Alumno():
     def __init__(self, nombre, nota):
         self.nombre = nombre.title()
