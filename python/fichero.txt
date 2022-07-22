@@ -1,0 +1,4 @@
+1. Ver si la planta vive
+2. Regar la planta, si es que vive
+3. Hacer jardin zen en el salón
+4. Garantizar que no tenga plantas
