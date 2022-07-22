@@ -22,4 +22,3 @@ print(alumno2)
 
 print(alumno1.resultado_examen())
 print(alumno2.resultado_examen())
-
