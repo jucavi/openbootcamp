@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resultados</title>
+    </head>
+    <body>
+        <div id="resultados"></div>
+        <a href="formularios.html">Back</a>
+    </body>
+    <script>
+        const divResultados = document.getElementById("resultados")
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            divResultados.append(`${name}: ${value}`);
+            divResultados.append(document.createElement("br"))
+        });
+    </script>
+</html>
