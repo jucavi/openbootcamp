@@ -7,3 +7,27 @@ p {
     color: blue;
     font-size: 16pt;
 }
+
+#primera-noticia {
+    color: green;
+    font-size: 12pt;
+}
+
+#segunda-noticia {
+    font-size: 14pt;
+}
+
+.encabezado {
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+
+/* aplica para todos los elementos que no tengan definida la propiedad */
+ *.warning {
+    color: darkred;
+}
+
+.autor, .fecha, .ubicacion, h1 {
+    text-decoration: underline;
+}
