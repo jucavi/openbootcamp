@@ -1,0 +1,22 @@
+.div-1, .div-2 {
+    background-color: red;
+}
+
+.img {
+    width: 5em;
+    height: 5em;
+}
+
+span {
+    /* display: inline;  POR DEFECTO */
+    background-color: aquamarine;
+    /* display: block; */
+}
+
+.span-1 {
+    float: right;
+}
+
+.span-2 {
+    float: left;
+}
