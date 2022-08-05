@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    background-color: bisque;
+    width: 700px;
+    height: 700px;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.contenido-1 {
+    background-color: whitesmoke;
+    width: 100px;
+    /* height: 300px; */
+    border: 1px solid lightcoral;
+}
+
+.contenido-2 {
+    background-color: whitesmoke;
+    width: 100px;
+    /* height: 300px; */
+    border: 1px solid lightcoral;
+}
+
+.contenido-3 {
+    background-color: whitesmoke;
+    width: 100px;
+    /* height: 300px; */
+    border: 1px solid lightcoral;
+}
