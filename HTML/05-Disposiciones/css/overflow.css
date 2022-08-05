@@ -1,0 +1,23 @@
+.overflow-hidden {
+    background-color: lightskyblue;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    background-color: lightskyblue;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    overflow: scroll;
+}
+
+.overflow-auto {
+    background-color: lightskyblue;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    overflow: auto;
+}

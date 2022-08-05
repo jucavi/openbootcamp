@@ -1,6 +1,7 @@
 .flex {
     display: flex;
     background-color: bisque;
+    flex-direction: column;
     width: 700px;
     height: 700px;
     justify-content: space-around;
