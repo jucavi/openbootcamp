@@ -1,0 +1,24 @@
+h1#h1-id\ otro-id.h1-class {
+    color: blueviolet;
+}
+
+.h1-class {
+    color: blue;
+}
+
+h1 {
+    color: blue;
+}
+
+h1 {
+    color: yellow;
+}
+
+h1 {
+    color: darksalmon !important;
+}
+
+p {
+    color: salmon;
+}
+
