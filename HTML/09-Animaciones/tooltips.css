@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip-btn {
+    padding: 15px 20px;
+    background-color: green;
+    color: #ddd;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 4px solid rgb(2, 89, 2);
+    position: relative;
+}
+
+.tooltip-btn:hover {
+    background-color: rgb(2, 105, 2);
+}
+
+/* .tooltip-btn:hover::after {
+    content: ' prueba';
+} */
+
+.tooltip {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    color:rgb(56, 73, 73);
+    background-color: rgb(164, 178, 196);
+    padding: 10px 30px;
+    border: none;
+
+    border-radius: 10px;
+}
+
+.tooltip::before {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: rgb(164, 178, 196);
+    z-index: 1;
+    top: 20px;
+    left: 200px;
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.tooltip-btn:hover .tooltip {
+    opacity: 1;
+}
