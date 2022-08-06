@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-modern {
+    border: none;
+    border-radius: 10px;
+    background-color: #8d99ae;
+    border-bottom: 2px solid #2b2d42;
+    color: #edf2f4;
+    padding: 15px 25px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all ease-in-out 0.4s;
+}
+
+.btn-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 12px #2b2d42;
+    background-color: #6e7a8e;
+    border-bottom: 3px solid #2b2d42;
+    color: #c9d2e0;
+}
