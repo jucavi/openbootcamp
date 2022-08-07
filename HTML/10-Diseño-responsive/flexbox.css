@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    gap: 0.5rem;
+    background-color: yellow;
+    padding: 0.5rem;
+    min-height: 5rem;
+    justify-content: space-between; /* eje principal */
+    /* flex-direction: column; */
+    align-items: center; /* eje secunadrio */
+
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: salmon;
+    padding: 0.25rem;
+    width: 10rem;
+}
+
+.item-2 {
+    align-self: stretch;
+}
+
+.item-4 {
+    justify-self: end;
+}
