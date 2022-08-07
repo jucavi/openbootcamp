@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #457b9d;
+    flex-grow: 1;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem
+}
+
+.item {
+    font-size: 1.5rem;
+    border: 1px solid #a8dadc;
+    border-radius: .4em;
+    padding: .4em 1em;
+}
+
+.principal {
+    background-color: #f1faee;
+    flex-grow: 14;
+    border: 1px solid #a8dadc;
+}
+
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .lateral {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
