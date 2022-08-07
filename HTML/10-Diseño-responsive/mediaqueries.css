@@ -1,0 +1,60 @@
+h1 {
+    color: red;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/* @media screen and (max-width: 576px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media print and (max-width: 576px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media speech and (max-width: 576px) {
+    h1 {
+        color: blue;
+    }
+}
+*/
+
+
+
+/* @media all and (max-width: 576px)  screen, speech, print */
+/* @media (max-width: 995px) {
+    h1 {
+        color: green;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        color: blue;
+    }
+} */
+
+/* @media (min-height: 300px) {
+    p {
+        color: cyan;
+    }
+}
+
+@media (orientation: landscape) {
+    p {
+        color: darkorange;
+    }
+} */
+
+@media (min-height: 300px), (min-width: 1100px) {
+    h1 {
+        color: cyan;
+    }
+}
