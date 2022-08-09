@@ -1,0 +1,10 @@
+// variables
+$text-color: #3f3f3f;
+
+// mixins
+@mixin formato-texto($bg-color: #f1f1f1) {
+    color: $text-color;
+    text-align: uppercase;
+    width: 50rem;
+    background-color: $bg-color;
+}

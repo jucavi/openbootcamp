@@ -1,0 +1,16 @@
+.btn {
+    border: none;
+    padding: 0.25rem 1rem;
+    margin: 1rem 1rem;
+    color: #2b2b2b;
+    border-radius: .2rem;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.btn-2 {
+    @extend .btn;
+    background-color: moccasin;
+}

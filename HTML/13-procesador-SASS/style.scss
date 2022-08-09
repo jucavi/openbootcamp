@@ -1,0 +1,24 @@
+
+// componentes
+// @import "sass/componentes";
+@use "sass/componentes";
+// namespace
+// $color -> comp.$color
+
+// mixins
+// @import "sass/mixins";
+@use "sass/mixins";
+
+// estilos
+@use "sass/estilos";
+
+// Paginas
+// Página principal
+// Página de contacto
+// Página de aviso legal
+
+// A partir de dart sass aparecen
+// @use y @forward
+
+// Otros
+@use "sass/builtin";

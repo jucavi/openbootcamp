@@ -1,0 +1,85 @@
+@use "sass:string";
+@use "sass:math";
+@use "sass:list";
+@use "sass:selector";
+@use "sass:color";
+
+//// funciones con cadenas de texto
+@debug "hola";
+@debug string.quote(Helvetica);
+@debug string.index("Helvetica Neue", "Neue");
+
+$string: "Helvetica";
+$newString: string.insert($string, ' Bold', 10);
+
+@debug $newString;
+@debug string.length($newString);
+
+@debug string.to-upper-case($string);
+
+@debug string.unique-id();
+
+//// Funciones con números
+@debug math.$pi;
+
+$number: 4.56;
+@debug math.ceil($number);
+@debug math.floor($number);
+
+// Map entre máximo y mínimo
+@debug math.clamp(1px, -1px, 10px);
+
+@debug math.max(1px, 4px, -15px, 12px);
+@debug math.min(1px, 4px, -15px, 12px);
+
+@debug math.round($number);
+@debug math.abs($number);
+
+
+//// Funciones con listas
+$lista: 10px, 10px, 0px, 15px;
+
+@debug $lista;
+@debug list.append($lista, 12px, $separator: auto);
+@debug list.append($lista, 12px, space);
+
+$border-custom: solid 1px #ccc;
+
+@debug list.append($border-custom, 23px);
+@debug list.index($border-custom, 1px);
+
+@debug list.nth($border-custom, 1);
+@debug list.separator($border-custom);
+
+@debug list.set-nth($border-custom, 2, 2px);
+
+$paddingsX: 1px 2px 3px;
+$paddingsY: 10px 20px 30px;
+@debug list.zip($paddingsX, $paddingsY);
+
+
+//// Selectores
+@debug selector.append("a", ".disabled");
+@debug selector.replace("a.disabled", "a", ".link");
+
+//// Colors
+@debug color.adjust(#6b717f, $red: 15);
+
+$color: #e251ff;
+@debug color.adjust($color, $red: -200, $alpha: 0.7);
+$result: #1a51ff;
+
+@debug color.complement($color);
+$result: #6eff51;
+@debug darken($color, 20%);
+$result: #c300ea;
+@debug lighten($color, 20%);
+$result: #f3b7ff;
+
+@debug color.green($color);
+@debug color.hue($color);
+@debug color.invert($color);
+$result: #1dae00;
+
+@debug color.mix(#036, #d2e1dd);
+$result: #698aa2;
