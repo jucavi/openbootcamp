@@ -1,0 +1,111 @@
+$color-main: #0075ff;
+
+@mixin btn-base() {
+    padding: 0.25rem 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+@mixin btn-sm-modified() {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+
+.btn-main {
+    @include btn-base();
+    background-color: $color-main;
+    color: white;
+    border: solid 1px $color-main;
+
+    &:hover {
+        background-color: white;
+        color: $color-main;
+    }
+
+    &-sm {
+        @extend .btn-main;
+        @include btn-sm-modified();
+    }
+}
+
+.btn-sec {
+    @include btn-base();
+    background-color: transparent;
+    color: black;
+
+    &:hover {
+        color: #888;
+    }
+
+    &-sm {
+        @extend .btn-sec;
+        @include btn-sm-modified();
+    }
+}
+
+.main-menu {
+    li {
+        font-size: 0.75rem;
+        list-style: none;
+        display: inline;
+    }
+}
+
+.icon-sm {
+    i {
+        padding: 0;
+        margin: 0;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        color: $color-main;
+        padding: 0.5rem;
+        box-shadow: 0 0 10px #000040;
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        font-size: 10rem;
+        color: $color-main;
+    }
+
+    .description {
+        .title {
+            font-size: 2rem;
+        }
+        .text {
+            color: #888;
+            font-weight: 600;
+        }
+    }
+
+    .cta {
+        color: $color-main;
+        font-weight: 600;
+        margin-top: 3rem;
+    }
+}
+
+.icon-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        color: $color-main;
+        font-size: 10rem;
+        padding: 0;
+    }
+    .title {
+        margin-top: -2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
