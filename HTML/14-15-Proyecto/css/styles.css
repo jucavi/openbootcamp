@@ -205,6 +205,8 @@ body {
   padding: 3rem;
   max-width: 992px;
   margin: auto;
+  padding: 0;
+  margin-bottom: 3rem;
 }
 .sec-benefits .intro {
   text-align: center;
@@ -223,6 +225,26 @@ body {
 }
 .sec-benefits .beneficts .benefict {
   max-width: 30%;
+}
+
+.sec-kpis {
+  background-color: #0075ff;
+  color: white;
+  margin: 0;
+  padding: 3rem;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpi .number {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi .desc {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6666666667);
 }
 
 /*# sourceMappingURL=styles.css.map */
