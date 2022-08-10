@@ -98,13 +98,13 @@
 }
 .icon-desc .icon {
   color: #0075ff;
-  font-size: 10rem;
+  font-size: 7rem;
   padding: 0;
 }
 .icon-desc .title {
-  margin-top: -2rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+  margin-top: -1.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 body {
@@ -162,6 +162,7 @@ body {
 }
 .sec-features .intro {
   text-align: center;
+  margin-top: 3.5rem;
 }
 .sec-features .intro h3 {
   font-size: 1.8rem;
@@ -206,10 +207,10 @@ body {
   max-width: 992px;
   margin: auto;
   padding: 0;
-  margin-bottom: 3rem;
 }
 .sec-benefits .intro {
   text-align: center;
+  margin-top: 3.5rem;
 }
 .sec-benefits .intro h3 {
   font-size: 1.8rem;
@@ -231,6 +232,7 @@ body {
   background-color: #0075ff;
   color: white;
   margin: 0;
+  margin-top: 3rem;
   padding: 3rem;
 }
 .sec-kpis .kpi {
@@ -245,6 +247,35 @@ body {
 .sec-kpis .kpi .desc {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.sec-onboarding {
+  width: 100%;
+  padding: 3rem;
+  max-width: 992px;
+  margin: auto;
+}
+.sec-onboarding .intro {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+.sec-onboarding .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-onboarding .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-onboarding .steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+.sec-onboarding .steps .step-separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
