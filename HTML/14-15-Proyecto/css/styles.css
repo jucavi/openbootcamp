@@ -107,9 +107,16 @@
   font-weight: 400;
 }
 
+html {
+  min-width: 100vm;
+}
+
 body {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav {
@@ -128,10 +135,10 @@ body {
 .sec-home {
   display: flex;
   align-items: center;
-  width: 100%;
   padding: 3rem;
   max-width: 992px;
   margin: auto;
+  max-width: 70%;
 }
 .sec-home .home-cta {
   flex: 1;
@@ -148,17 +155,21 @@ body {
   border: solid 1px #0075ff;
   border-radius: 50%;
 }
-.sec-home .home-title {
+.sec-home .home-cta .home-title {
   width: 20rem;
   font-size: 3rem;
 }
+.sec-home .home-cta .home-description {
+  width: 25rem;
+}
+.sec-home .lead-magnet .input-col {
+  max-width: 20rem;
+}
 
 .sec-features {
-  width: 100%;
   padding: 3rem;
   max-width: 992px;
   margin: auto;
-  max-width: 100%;
 }
 .sec-features .intro {
   text-align: center;
@@ -175,11 +186,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   padding: 2rem 0;
 }
 .sec-features .features .text {
-  max-width: 40%;
   flex: 1;
 }
 .sec-features .features .text .feat-feature {
@@ -202,7 +211,6 @@ body {
 }
 
 .sec-benefits {
-  width: 100%;
   padding: 3rem;
   max-width: 992px;
   margin: auto;
@@ -250,10 +258,10 @@ body {
 }
 
 .sec-onboarding {
-  width: 100%;
   padding: 3rem;
   max-width: 992px;
   margin: auto;
+  min-width: 70%;
 }
 .sec-onboarding .intro {
   text-align: center;
@@ -295,6 +303,19 @@ body {
 }
 .sec-footer-cta .cta-img {
   height: 15rem;
+}
+
+@media (max-width: 768px) {
+  .sec-home {
+    max-width: 100%;
+  }
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

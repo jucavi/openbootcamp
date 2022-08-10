@@ -2,7 +2,6 @@
 @use "components";
 
 @mixin section-display {
-    width: 100%;
     padding: 3rem;
     max-width: 992px;
     margin: auto;
@@ -20,9 +19,16 @@
     }
 }
 
+html {
+    min-width: 100vm;
+}
+
 body {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .nav {
@@ -44,6 +50,7 @@ body {
     display: flex;
     align-items: center;
     @include section-display();
+    max-width: 70%;
     .home-cta {
         flex: 1;
         .cta-text {
@@ -58,16 +65,23 @@ body {
                 border-radius: 50%;
             }
         }
+        .home-title {
+            width: 20rem;
+            font-size: 3rem;
+        }
+        .home-description {
+            width: 25rem;
+        }
     }
-    .home-title {
-        width: 20rem;
-        font-size: 3rem;
+    .lead-magnet {
+        .input-col {
+            max-width: 20rem;
+        }
     }
 }
 
 .sec-features {
     @include section-display();
-    max-width: 100%;
     .intro {
         @include section-intro();
     }
@@ -75,16 +89,14 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
         padding: 2rem 0;
         .text {
-            max-width: 40%;
+            // max-width: 40%;
             flex: 1;
             .feat-feature {
                 display: flex;
                 flex-direction: row;
                 align-items: baseline;
-
                 .description {
                     margin-left: 1rem;
                     .feature-title {
@@ -144,6 +156,7 @@ body {
 
 .sec-onboarding {
     @include section-display();
+    min-width: 70%;
     .intro {
         @include section-intro();
     }
@@ -179,5 +192,22 @@ body {
     }
     .cta-img {
         height: 15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-home {
+        max-width: 100%;
+    }
+    .sec-onboarding {
+        .steps {
+            flex-direction: column;
+        }
+    }
+    .sec-footer-cta {
+        .footer-cta {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
