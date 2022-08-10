@@ -278,4 +278,23 @@ body {
   margin: 0 1rem;
 }
 
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  display: flex;
+  justify-content: space-between;
+}
+.sec-footer-cta .footer-cta {
+  padding: 5rem;
+  width: 40%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.1rem;
+}
+.sec-footer-cta .cta-img {
+  height: 15rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

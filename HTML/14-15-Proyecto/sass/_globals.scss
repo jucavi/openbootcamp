@@ -159,3 +159,25 @@ body {
         }
     }
 }
+
+.sec-footer-cta {
+    background-color: components.$color-footer;
+    display: flex;
+    justify-content: space-between;
+    // background-image: url("../assets/img/earna68ba618b798a8cfa.webp");
+    // background-repeat: no-repeat;
+    // background-position: 100%;
+    .footer-cta {
+        padding: 5rem;
+        width: 40%;
+        .cta-title {
+            font-size: 2rem;
+        }
+        .cta-description {
+            font-size: 1.1rem;
+        }
+    }
+    .cta-img {
+        height: 15rem;
+    }
+}
