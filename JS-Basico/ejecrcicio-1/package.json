@@ -1,0 +1,15 @@
+{
+    "name": "ejecrcicio-1",
+    "version": "1.0.0",
+    "description": "Genración de un script en el package json para el ejercicio del cápitulo de introducción al JavaScript ",
+    "main": "index.js",
+    "scripts": {
+        "saludar": "echo \"Hola, este es mi primer ejercicio con Node en el mejor Bootcamp de programación del mundo\" && exit 1",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "ejercicio"
+    ],
+    "author": "jucavi",
+    "license": "ISC"
+}

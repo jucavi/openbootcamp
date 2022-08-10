@@ -1,5 +1,5 @@
 {
-    "name": "hola-mundo",
+    "name": "hola_mundo",
     "version": "1.0.0",
     "description": "Este es el primer proyecto de node",
     "main": "index.js",
