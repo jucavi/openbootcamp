@@ -74,23 +74,31 @@ $color-main: #0075ff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 20rem;
     .icon {
-        font-size: 10rem;
+        font-size: 5rem;
         color: $color-main;
     }
     .description {
+        text-align: center;
         .title {
-            font-size: 2rem;
+            font-size: 1.3rem;
+            font-weight: 600;
         }
         .text {
             color: #888;
-            font-weight: 600;
+            font-size: 0.8rem;
+            font-weight: 400;
         }
     }
     .cta {
+        font-size: 0.8rem;
+        text-align: center;
         color: $color-main;
         font-weight: 600;
-        margin-top: 3rem;
+        // margin-top: 3.5rem;
+        padding: 0 0.6rem;
+        margin-top: auto;
     }
 }
 

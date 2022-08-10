@@ -1,11 +1,22 @@
-@use "components";
 
+@use "components";
 
 @mixin section-display {
     width: 100%;
     padding: 3rem;
     max-width: 992px;
     margin: auto;
+}
+
+@mixin section-intro {
+    text-align: center;
+    h3 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: .8rem;
+        color: #888;
+    }
 }
 
 body {
@@ -57,14 +68,7 @@ body {
     @include section-display();
     max-width: 100%;
     .intro {
-        text-align: center;
-        h3 {
-            font-size: 1.8rem;
-        }
-        p {
-            font-size: .8rem;
-            color: #888;
-        }
+        @include section-intro();
     }
     .features {
         display: flex;
@@ -75,7 +79,7 @@ body {
         .text {
             max-width: 40%;
             flex: 1;
-            .feature {
+            .feat-feature {
                 display: flex;
                 flex-direction: row;
                 align-items: baseline;
@@ -96,6 +100,21 @@ body {
     .images {
         img {
             max-width: 20rem;
+        }
+    }
+}
+
+.sec-benefits {
+    @include section-display();
+    .intro {
+        @include section-intro();
+    }
+    .beneficts {
+        display: inline;
+        display: flex;
+        justify-content: space-between;
+        .benefict {
+            max-width: 30%;
         }
     }
 }
