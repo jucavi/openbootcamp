@@ -11,3 +11,8 @@ console.log(lista3);
 const lista4 = [...lista1, ...lista2];
 console.log(lista4);
 
+// Obtener una lista a partir de otra
+console.log(lista1.slice(0, 3));
+
+const lista5 = lista2.slice(1, -2);
+console.log(lista5)
