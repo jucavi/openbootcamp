@@ -8,7 +8,7 @@ class Estudiante {
         return {
             nombre: this.nombre,
             asignaturas: this.asignaturas
-        }
+        };
     }
 }
 
