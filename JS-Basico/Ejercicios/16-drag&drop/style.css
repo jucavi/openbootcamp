@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.draggables {
+    display: flex;
+}
+
+.seccion {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: darkseagreen;
+    border-radius: 1rem;
+    flex: 1 0 30%;
+}
+
+.draggables p {
+    background-color: lightgray;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .4rem;
+}
+
+.trash {
+    display: flex;
+    justify-content: center;
+}
+
