@@ -7,10 +7,12 @@ const persona = {
 };
 
 const person_string = JSON.stringify(persona);
-sessionStorage.setItem('persona', person_string);
-localStorage.setItem('persona', person_string);
 
-const ahora = new Date()
-const expires = new Date(ahora.getTime() + 2*60*1000)
-document.cookie = `persona=${person_string};expires=${expires}`;
+// sessionStorage.setItem('persona', person_string);
+
+// localStorage.setItem('persona', person_string);
+
+const ahora = new Date();
+const expires = new Date(ahora.getTime() + 2 * 60 * 1000);
+// document.cookie = `persona=${person_string};expires=${expires}`;
 
