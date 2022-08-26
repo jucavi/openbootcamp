@@ -1,0 +1,9 @@
+h2 {
+    text-align: center;
+}
+
+.map {
+    height: 30rem;
+    width: 100%;
+    /* background-color: red; */
+}
