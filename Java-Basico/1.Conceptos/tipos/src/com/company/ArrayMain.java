@@ -7,6 +7,7 @@ public class ArrayMain {
         String[] letras2 = new String[] { "a", "b", "c", "d"};
 
         int[] numeros =  new int[4];
+        Coche[] coches = new Coche[4];
 
         letras1[0] = "a";
         letras1[1] = "b";
