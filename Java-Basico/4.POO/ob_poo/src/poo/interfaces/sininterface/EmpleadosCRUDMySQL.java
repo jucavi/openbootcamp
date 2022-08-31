@@ -11,7 +11,6 @@ public class EmpleadosCRUDMySQL {
     }
 
     public List<Empleado> findAll() {
-        List<Empleado> empleados = new ArrayList<>();
-        return empleados;
+        return new ArrayList<>();
     }
 }
