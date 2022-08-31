@@ -6,7 +6,7 @@ public interface CocheCRUD {
 
     public void save(Coche coche);
 
-    public List<Coche> save();
+    public List<Coche> findAll();
 
     public void delete(Coche coche);
 }
