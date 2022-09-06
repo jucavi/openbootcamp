@@ -55,7 +55,7 @@ public class CopySolution8 {
                 byte[] buffer = new byte[1024];
                 int lenRead;
                 while ((lenRead = original.read(buffer)) > 0) {
-                    out.write(buffer);
+                    out.write(buffer, 0, lenRead);
                 }
             }
         } catch (FileNotFoundException e) {
@@ -86,22 +86,3 @@ public class CopySolution8 {
         }
     }
 }
-        byte[] buffer = new byte[1024];
-                int lenRead;
-                while ((lenRead = original.read(buffer)) > 0) {
-                    out.write(buffer);
-                }
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-
-    public static void copyFileBuffer(String fileIn, String fileOut) throws IOException {
-        try {
-
-            try (FileInputStream original = new FileInputStream(fileIn); FileOutputStream copied = new FileOutputStream(fileOut)) {
-                InputStream in = new BufferedInputStream(original);
-               
