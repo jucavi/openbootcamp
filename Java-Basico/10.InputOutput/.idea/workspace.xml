@@ -8,8 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/10.InputOutput.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/10.InputOutput/Session10.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/imputOutput/Session10.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Session10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../imputOutput/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,24 +37,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kaos/workspace/openbootcamp/Java-Basico/imputOutput&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/kaos/workspace/openbootcamp/Java-Basico/10.InputOutput"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Session10">
     <configuration name="Session10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Session10" />
-      <module name="10.InputOutput" />
+      <module name="InputOutput" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="io" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io" />
-      <module name="10.InputOutput" />
+      <module name="InputOutput" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,5 +76,16 @@
       <updated>1661981419284</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
