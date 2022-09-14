@@ -22,6 +22,6 @@ public class VehiculoBuilder {
 
     // método que devuelve el objeto creado
     public Vehiculo build() {
-        return this.vehiculo;
+        return vehiculo;
     }
 }
