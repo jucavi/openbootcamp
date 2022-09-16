@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Usuarios implements UsuarioIterator {
 
-    private ArrayList<Usuario> bootcampers = new ArrayList<Usuario>();
+    private final ArrayList<Usuario> bootcampers = new ArrayList<Usuario>();
     private int position = 0;
 
     public void add(Usuario user) {
