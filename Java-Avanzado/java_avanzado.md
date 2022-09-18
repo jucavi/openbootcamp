@@ -79,7 +79,7 @@ Es un tipo de programación declarativa, no imperativa
 				if (nameclass == null) {
 					nameclass = new NameClass()
 				}
-				return NameClass;
+				return NameClass
 			}
 
 
@@ -131,7 +131,7 @@ Es un tipo de programación declarativa, no imperativa
 
 
 		class BaseClassBuilder
-			BaseClass baseclass;
+			BaseClass baseclass
 
 			// Constructor
 			public BaseClassBuilder(attr)
@@ -196,7 +196,7 @@ Es un tipo de programación declarativa, no imperativa
 		class BaseDecorator implements BaseInterface {
 
 			// Atributo privado de tipo Interface
-			private BaseInterface baseinterface;
+			private BaseInterface baseinterface
 
 			// constructor con parámetro clase que implementa interface
 			public BaseDecorator(BaseInterface bi) {
@@ -204,7 +204,7 @@ Es un tipo de programación declarativa, no imperativa
 			}
 
 			// implementa método que invoca el método de la instancia pasada como parámetro
-			@override
+			@Override
 			public (type) method1() {
 				this.baseinterface.method1()
 			}
@@ -215,7 +215,7 @@ Es un tipo de programación declarativa, no imperativa
 
 
 			// implementa método
-			@override
+			@Override
 			public (type) method1() {
 				// LOGIC 1
 			}
@@ -232,7 +232,7 @@ Es un tipo de programación declarativa, no imperativa
 
 
 			// implementa método
-			@override
+			@Override
 			public (type) method1() {
 				// Ejecución de la clase pasada como parámetro en el constructor
 				super.method1()
@@ -251,12 +251,12 @@ Es un tipo de programación declarativa, no imperativa
 		}
 
 		class Clase1 implements BaseInterface {
-			@override
+			@Override
 			public (type) method1() {
 				// LOGIC 1
 			}
 
-			@override
+			@Override
 			public (type) method1() {
 				// LOGIC 2
 			}
@@ -279,12 +279,12 @@ Es un tipo de programación declarativa, no imperativa
 		class Adapter implements BaseInterface {
 			ClaseParecida cp = new ClaseParecida
 
-			@override
+			@Override
 			public (type) method1() {
 				cp.metodo1(attr1)
 			}
 
-			@override
+			@Override
 			public (type) method1() {
 				cp.metodo2(attr2)
 			}
@@ -325,7 +325,7 @@ Es un tipo de programación declarativa, no imperativa
 			AjusteFino af = new AjusteFino()
 			Formación f = new Formacion()
 
-			String contenido;
+			String contenido
 
 			if (hv.ok) {
 				precarga.set()
@@ -380,7 +380,7 @@ Es un tipo de programación declarativa, no imperativa
 			}
 		}
 
-		@override
+		@Override
 		public boolean hasMore() {
 			return position < users.size()
 		}
@@ -413,7 +413,7 @@ Es un tipo de programación declarativa, no imperativa
 		void update()
 
 	class EventManager {
-		prívate (type)[] listeners;
+		prívate (type)[] listeners
 
 		public void subscribe(Listener listener) {
 			listeners.add(listener)
@@ -456,9 +456,69 @@ Es un tipo de programación declarativa, no imperativa
 ### MEDIATOR:
 	Permite reducir las dependencias caóticas entre objetos. El patrón restringe las comunicaciones directas entre los objetos, forzándolos a colaborar únicamente a través de un objeto mediador.
 
+    interface Mediator {
 
+        void notify(Component sender, String event)
+        void register(Component sender)
+    }
 
+    class MediatorConcrete implements Mediator {
+        ArrayList<Component> senders = new ArrayList<>()
 
+        @Override
+        public void register(Component sender) {
+            if (!senders.contains(sender)) {
+                senders.add(sender)
+                sender.addMediator(this)
+            }
+        }
+
+        @Override
+        public void notify(Component sender, String event) {
+            for (Component current : senders) {
+                if (!current.equals(sender)) {
+                    current.receiveEvent(event)
+                }
+            }
+
+        }
+    }
+
+    class Component {
+        private Mediator mediator
+
+        public void addMediator(Mediator mediator) {
+            this.mediator = mediator
+        }
+
+        public void receiveEvent(String event) {
+            System.out.println("Recibido en  " + this + " el evento lanzado por " + event)
+        }
+
+        public void sendEvent(String event) {
+            System.out.println("Notificado  por " + this)
+            mediator.notify(this, event)
+        }
+    }
+
+    public class Main {
+
+        public static void main(String[] args) {
+            Mediator mediator = new MediatorConcrete()
+
+            Component component1 = new Component()
+            Component component2 = new Component()
+            Component component3 = new Component()
+
+            mediator.register(component1)
+            mediator.register(component2)
+            mediator.register(component3)
+
+            component1.sendEvent("Desde componente " + component1)
+            component2.sendEvent("Desde componente " + component2)
+            component3.sendEvent("Desde componente " + component3)
+        }
+    }
 
 
 ### STATE:
