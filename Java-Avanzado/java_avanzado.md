@@ -525,6 +525,10 @@ Es un tipo de programación declarativa, no imperativa
 	Permite a un objeto alterar su comportamiento cuando su estado interno cambia. Es como si el objeto cambiase su clase
 
 
+### STRATEGY:
+	Permite definir una familia de algoritmos, colocar cada uno de ellos en una clase separada y hacer sus objetos intercambiables.
+
+
 
 
 
