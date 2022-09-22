@@ -5,14 +5,13 @@ import com.company.demospringrest.models.Bootcamper;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class BootcamperService {
 
     private ArrayList<Bootcamper> bootcampers = new ArrayList<Bootcamper>();
 
-    public List<Bootcamper> getAll() {
+    public ArrayList<Bootcamper> getAll() {
         return this.bootcampers;
     }
 

@@ -10,6 +10,6 @@ public class ColleagueConcrete1  extends Colleague {
     @Override
     void sendMessage() {
         System.out.println("Soy collegaConcrete1, envio un mensaje");
-        mediator.resend(this);
+        this.mediator.resend(this);
     }
 }
