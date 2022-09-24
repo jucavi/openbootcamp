@@ -1,4 +1,4 @@
-package S.aplicacion;
+package S.singleResponsability;
 
 public class UsuarioBuilder {
     private Usuario usuario;

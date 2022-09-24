@@ -1,17 +1,17 @@
-package S.aplicacion;
+package O.openClose;
 
 public class Usuario {
     private String username;
     private String name;
     private String email;
-    private int age;
+    private int nivelAcceso;
 
     public Usuario() {}
-    public Usuario(String username, String name, String email, int age) {
+    public Usuario(String username, String name, String email, int nivelAcceso) {
         this.username = username;
         this.name = name;
         this.email = email;
-        this.age = age;
+        this.nivelAcceso = nivelAcceso;
     }
 
     public String getUsername() {
@@ -38,11 +38,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public int getAge() {
-        return age;
+    public int getNivelAcceso() {
+        return nivelAcceso;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setNivelAcceso(int nivelAcceso) {
+        this.nivelAcceso = nivelAcceso;
     }
 }

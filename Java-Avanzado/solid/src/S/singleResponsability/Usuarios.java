@@ -1,4 +1,4 @@
-package S.aplicacion;
+package S.singleResponsability;
 
 import java.util.ArrayList;
 
