@@ -1,4 +1,4 @@
-package I.aplicacion;
+package D.inicial;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,10 +18,10 @@ public class Main {
         UsuariosDB usuariosDB;
 
         String tipo = "memoria";
-        if (tipo.equalsIgnoreCase("memoria")) {
-            usuariosDB = new UsuariosDBMemoria();
-        } else {
+        if (tipo.equalsIgnoreCase("fichero")) {
             usuariosDB = new UsuariosDBFichero("usuarios.txt");
+        } else {
+            usuariosDB = new UsuariosDBMemoria();
         }
 
         Usuarios usuarios = new Usuarios(usuariosDB);
@@ -40,7 +40,7 @@ public class Main {
 
     public static void imprimirEstadisticas(UsuariosDB usuariosDB) {
         if (usuariosDB instanceof UsuariosDBMemoria) {
-            System.out.println("Inserciones " + (((UsuariosDBMemoria) usuariosDB).getTotalInserciones()));
+            System.out.println("Iserciones " + (((UsuariosDBMemoria) usuariosDB).getTotalInserciones()));
             System.out.println("Eliminaciones " + (((UsuariosDBMemoria) usuariosDB).getTotalEliminaciones()));
         }
     }
