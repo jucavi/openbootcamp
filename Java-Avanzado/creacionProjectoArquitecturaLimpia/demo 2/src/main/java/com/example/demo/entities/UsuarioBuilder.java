@@ -6,17 +6,17 @@ public class UsuarioBuilder {
     private UsuarioBuilder() {}
     public UsuarioBuilder(String username) {
         usuario = new Usuario();
+
         usuario.setUsername(username);
     }
 
-
     public UsuarioBuilder setName(String name) {
-        this.usuario.setName(name);
+        this.usuario.setName(name != null ? name : "SinNombre");
         return this;
     }
 
     public UsuarioBuilder setEmail(String email) {
-        this.usuario.setEmail(email);
+        this.usuario.setEmail(email != null ? email : "SinEmail");
         return this;
     }
 
