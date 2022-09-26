@@ -1,0 +1,5 @@
+juan,juan,juan@email.com,7
+jose,jose,jose@email.com,3
+ana,ana,ana@email.com,1
+maria,maria,maria@email.com,10
+ismael,ismael,ismael@email.com,9

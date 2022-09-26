@@ -2,6 +2,7 @@ package com.example.demo.services;
 
 import com.example.demo.entities.Usuario;
 import com.example.demo.repositories.UsuariosDB;
+import com.example.demo.repositories.UsuariosDBFichero;
 import com.example.demo.repositories.UsuariosDBMemoria;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 
 @Service
 public class UsuariosService {
-    UsuariosDB usuariosDB = new UsuariosDBMemoria();
+    UsuariosDB usuariosDB = new UsuariosDBFichero("src/main/java/com/example/demo/db/usuarios.txt");
 
     public ArrayList<Usuario> listar() {
         return usuariosDB.listar();
