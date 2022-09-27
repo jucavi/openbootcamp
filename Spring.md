@@ -28,4 +28,11 @@
 
 
 ## Agregar Beans de forma automatica [documentacion](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-annotation-config)
-	- See @Component, @Value ...
+- See @Component, @Value ...
+
+
+# Spring Data JPA (Jakarta Persistence API)
+- JPA
+  - Hibernate
+    - JDBC
+
