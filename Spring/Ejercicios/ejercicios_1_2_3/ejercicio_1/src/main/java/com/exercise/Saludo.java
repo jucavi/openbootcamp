@@ -1,3 +1,5 @@
+package com.exercise;
+
 import org.springframework.stereotype.Service;
 
 @Service
