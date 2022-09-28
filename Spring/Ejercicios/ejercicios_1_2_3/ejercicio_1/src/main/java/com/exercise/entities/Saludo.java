@@ -1,8 +1,7 @@
-package com.exercise;
+package com.exercise.entities;
 
 import org.springframework.stereotype.Service;
 
-@Service
 public class Saludo {
 
     public void imprimirSaludo() {
