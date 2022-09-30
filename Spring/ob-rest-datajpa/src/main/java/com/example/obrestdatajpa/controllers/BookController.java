@@ -2,6 +2,8 @@ package com.example.obrestdatajpa.controllers;
 
 import com.example.obrestdatajpa.entities.Book;
 import com.example.obrestdatajpa.repositories.BookRepository;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -9,6 +11,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+import springfox.documentation.annotations.ApiIgnore;
 
 import java.util.List;
 import java.util.Optional;
@@ -40,7 +43,8 @@ public class BookController {
      * @return ResponseEntity
      */
     @GetMapping("/api/books/{id}")
-    public ResponseEntity<Book> findOneById(@PathVariable Long id) {
+    @ApiOperation("Buscar un libro por clave primaria id Long")
+    public ResponseEntity<Book> findOneById(@ApiParam("Clave primaria tipo Long") @PathVariable Long id) {
         Optional<Book> bookOPt =  bookRepository.findById(id);
 
         // Opción 1
@@ -98,6 +102,7 @@ public class BookController {
     }
 
     @DeleteMapping("/api/books/{id}")
+    @ApiIgnore
     public ResponseEntity<Book> delete(@PathVariable Long id) {
         try {
             bookRepository.deleteById(id);
@@ -110,7 +115,6 @@ public class BookController {
 
             return ResponseEntity.notFound().build();
         }
-
 
         return ResponseEntity.noContent().build();
     }
